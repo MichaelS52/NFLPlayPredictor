@@ -20,5 +20,7 @@ Test Sets:
 Result: 46.324% accuracy.
 
 This data can be used to see which teams are more/less predictable:
+
 NE - 47.03% accuracy
+
 CAR - 48.1% accuracy
