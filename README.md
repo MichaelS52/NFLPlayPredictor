@@ -21,6 +21,7 @@ Result: 46.324% accuracy.
 
 This data can be used to see which teams are more/less predictable:
 
-NE - 47.03% accuracy
-
-CAR - 48.1% accuracy
+NEScore: 0.445301204819
+CARScore: 0.413523131673
+DENScore: 0.371700879765
+NYGScore: 0.451008645533
