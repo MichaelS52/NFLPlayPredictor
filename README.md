@@ -21,4 +21,4 @@ Test Sets:
 - max_features = 3
 - min_samples_leaf = 6
 - n_estimators = 7
-*the result is 46.325% accuracy.*
+#the result is 46.325% accuracy.
