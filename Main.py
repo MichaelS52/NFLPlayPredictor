@@ -51,6 +51,9 @@ def filterDataSet(fileName):
 #filterDataSet("datasets/pbp-2015")
 #filterDataSet("datasets/pbp-2016")
 
+def hasNumbers(inputString):
+    return any(char.isdigit() for char in inputString)
+
 ### Algorithm starts here ###
 
 def createFeatureLabelSets():
@@ -71,7 +74,10 @@ def createFeatureLabelSets():
 
             playtype = row[21] #Label
             if(playtype=='PASS'):
-                playtype+=' ' + str(row[26])
+                if str(row[26])!='': #If there IS a detailed playtype, add it
+                    playtype+=' ' + str(row[26])
+                    if(hasNumbers(playtype)): ##Filter out labels with specific players.
+                        playtype = row[21]
             if(playtype=='RUSH'):
                 if(str(row[37])!='0'):
                     playtype+=' ' + str(row[37])
@@ -105,6 +111,7 @@ def runMainInput():
 features, labels = createFeatureLabelSets()
 print("The features and labels length is: " + str(len(features)))
 print("There are " + str(len(set(labels))) + " unique labels active.")
+print(set(labels))
 amountOfPoints = len(features)
 trainingPoints = 57000
 percent = float(trainingPoints)/amountOfPoints
