@@ -18,3 +18,7 @@ Test Sets:
 ~80% of the dataset for training and ~20% for testing, RandomForestClassifier algorithm, Options:[max_depth = 15, max_features = 3, min_samples_leaf = 6, n_estimators = 7].
 
 Result: 46.324% accuracy.
+
+This data can be used to see which teams are more/less predictable:
+NE - 47.03% accuracy
+CAR - 48.1% accuracy
