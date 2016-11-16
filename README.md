@@ -15,9 +15,6 @@ set(['', 'EXCEPTION', 'RUSH LEFT TACKLE', 'PASS SHORT LEFT', 'FUMBLES', 'SACK', 
 
 Test Sets:
 
-~80% of the dataset for training and ~20% for testing, RandomForestClassifier algorithm,
-- max_depth = 15
-- max_features = 3
-- min_samples_leaf = 6
-- n_estimators = 7
-Result: 46.3247%
+~80% of the dataset for training and ~20% for testing, RandomForestClassifier algorithm, Options:[max_depth = 15, max_features = 3, min_samples_leaf = 6, n_estimators = 7].
+
+Result: 46.324% accuracy.
